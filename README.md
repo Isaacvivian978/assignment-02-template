@@ -9,6 +9,16 @@ Complete any two out of the three challenges. See below for details of each chal
 
 #### Challenge - 2
 > In `src/assignment.mjs`, implement the `countEvenNumbers` function. Determine and return the count of all even numbers in the given array. If you did Challenge - 2, remove the comment in the line just after the `countEvenNumbers` function, otherwise leave the comment.
+const assignment = require('./assignment.js');
+
+const { sumOfNumbers, countEvenNumbers, celsiusToFahrenheit } = assignment;
+
+if (sumOfNumbers && typeof sumOfNumbers === 'function'){
+    console.log(sumOfNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+}
+
+if (countEvenNumbers && typeof countEvenNumbers === 'function'){
+    console.log(countEvenNumbers([1
 
 #### Challenge - 3
 > In `src/assignment.mjs`, implement the `celsiusToFahrenheit` function. Convert the array of numbers representing temperatures in Celsius, to an array of temperatures in Fahrenheit. Decimal figures in the converted values in Fahrenheit should be removed. E.g 51.21 should just be 51 (hint: Math.trunc(...) function) 
